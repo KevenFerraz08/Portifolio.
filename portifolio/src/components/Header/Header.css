@@ -1,0 +1,46 @@
+:root{
+    --bacground:#282c34;
+    --text-comum:#D3D4D7;
+    --color-teme:#019BC3;
+    --section-color:#16181D;
+    }
+    *{
+        text-decoration: none;
+    }
+    header {
+        background-color: var(--bacground);
+        padding: 1rem; /* Adicionando um pouco de espaço interno para melhorar a aparência */
+        position: sticky;/*para que ele fique no topo*/
+        top: 0;
+        z-index: 99;/*para que ele fique acipa dos outros itens*/
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+    }
+    
+    img {
+        width: 50px;
+        height: 50%;
+        margin-bottom: 0;
+    }
+    
+    ul {
+        float: right; 
+        display: flex;
+        list-style-type: none;
+        align-items: center;
+    }
+    
+    li {
+        color: var(--text-comum);
+        font-weight: bolder;
+        margin-right: 1.5rem;
+        cursor: pointer;
+    }
+    
+    li:hover {
+        color: var(--color-teme);
+    }

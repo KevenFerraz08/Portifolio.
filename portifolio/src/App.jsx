@@ -1,8 +1,9 @@
 import './App.css';
+import APPRoutes from './routes';
 function App() {
   return (
     <div className="App">
-      <h1>ja voltamos</h1>
+      <APPRoutes />
     </div>
   );
 }
