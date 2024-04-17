@@ -17,6 +17,42 @@ section{
     justify-content: space-around;
     background-color: var(--section-color);
 }
+.container-image{
+    float: left;
+    width: 30%;
+    height: 100%;
+    background-color: #D3D4D7;
+
+}
+.container-image .image{
+    width: 80%;
+    height: 80%;
+    background-color: #16181D;
+    margin: 15% auto;
+    border-radius: 20px;
+    padding:10px;
+}
+.image .foto{
+    width: 90%;
+    height: 100%;
+    margin-top: 10%;
+}
+.image .button{
+    width:200px;
+    color:var(--text-comum);
+    border-style:solid;
+    border-color: var(--text-comum);
+    border-radius:20px;
+    background-color:var(--section-color);
+    text-align:left;
+    font-weight: bolder;
+}
+.container-informations{
+    float: right;
+    width: 70%;
+    height: 100%;
+    background-color: chartreuse;
+}
 /*
 section{
     width: 100%;
