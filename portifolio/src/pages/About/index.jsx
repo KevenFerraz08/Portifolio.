@@ -1,6 +1,15 @@
+import Header from '../../components/Header/index'
+import { Helmet } from "react-helmet";
 const About = () => {
     return(
-        <h1>About</h1>
+        <>
+            <Helmet>
+                <title>About</title>
+            </Helmet>
+            <Header />
+
+            <h1>About</h1>
+        </>
     )
 }
 export default About

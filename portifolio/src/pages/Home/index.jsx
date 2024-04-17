@@ -1,4 +1,6 @@
 import Header from '../../components/Header/index'
+import Footer from '../../components/Footer';
+import Section from '../../components/Section-me';
 import { Helmet } from "react-helmet";
 const Home = () => {
     return(
@@ -7,8 +9,8 @@ const Home = () => {
                 <title>Home</title>
             </Helmet>
             <Header />
-
-            <h1>home</h1>
+            <Section />
+            <Footer />
         </>
     )
 }

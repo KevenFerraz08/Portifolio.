@@ -6,6 +6,7 @@
     }
     *{
         text-decoration: none;
+        color: var(--text-comum);
     }
     header {
         background-color: var(--bacground);
@@ -13,6 +14,7 @@
         position: sticky;/*para que ele fique no topo*/
         top: 0;
         z-index: 99;/*para que ele fique acipa dos outros itens*/
+        box-shadow: 0px 0px 15px 1px var(--section-color);
     }
     nav{
         display: flex;
@@ -32,15 +34,16 @@
         display: flex;
         list-style-type: none;
         align-items: center;
+        margin-right: 1.5rem;
     }
     
-    li {
+    li span {
         color: var(--text-comum);
         font-weight: bolder;
         margin-right: 1.5rem;
         cursor: pointer;
     }
     
-    li:hover {
+    li span:hover {
         color: var(--color-teme);
     }
