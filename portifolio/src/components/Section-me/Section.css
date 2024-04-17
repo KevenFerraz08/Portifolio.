@@ -28,7 +28,7 @@ section{
     width: 80%;
     height: 80%;
     background-color: #16181D;
-    margin: 15% auto;
+    margin: 8% auto;
     border-radius: 20px;
     padding:10px;
 }
@@ -44,8 +44,10 @@ section{
     border-color: var(--text-comum);
     border-radius:20px;
     background-color:var(--section-color);
-    text-align:left;
     font-weight: bolder;
+    margin-top: 10%;
+    margin-left: 20px;
+    font-size: 18px;
 }
 .container-informations{
     float: right;

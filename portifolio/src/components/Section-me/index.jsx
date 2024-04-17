@@ -8,7 +8,8 @@ const Section = () => {
                 <div className="container-image">
                     <div className="image">
                         <center><img src={foto} alt="Foto" className='foto'/></center>
-                        <button className="button">About-me&nbsp;&rarr;</button>
+                        <br/>
+                        <button className="button">About-me&nbsp;&nbsp;&nbsp;&rarr;</button>
                     </div>
                 </div>
                 <div className="container-informations">
