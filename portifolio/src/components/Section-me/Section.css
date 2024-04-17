@@ -6,7 +6,6 @@
 }
 section{
     width:100%;
-    height:500px;
     background-color:red;
 }
 .container-section{
@@ -26,7 +25,6 @@ section{
 }
 .container-image .image{
     width: 80%;
-    height: 80%;
     background-color: #16181D;
     margin: 8% auto;
     border-radius: 20px;
@@ -38,7 +36,7 @@ section{
     margin-top: 10%;
 }
 .image .button{
-    width:200px;
+    width:50%;
     color:var(--text-comum);
     border-style:solid;
     border-color: var(--text-comum);
@@ -46,6 +44,7 @@ section{
     background-color:var(--section-color);
     font-weight: bolder;
     margin-top: 10%;
+    margin-bottom: 5%;
     margin-left: 20px;
     font-size: 18px;
 }
