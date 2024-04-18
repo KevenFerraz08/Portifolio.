@@ -44,10 +44,15 @@ const Section = () => {
                                <center> <img align="center" alt="Js" height="30" width="40" src={icon_react}/></center>
                             </div>
                             <div className="icon-skills">
-                               <center> <img align="center" alt="node js" height="30" width="40" src={icon_node}/></center>
+                            <center>
+                                     <img align="center" alt="node js" height="30" width="40" src={icon_node} />
+                            </center>
+
                             </div>
                             <div className="icon-skills">
+                            <a href="https://github.com/Kevenferraz39" target="_blank" rel="noopener noreferrer">
                                <center> <img align="center" alt="github" height="30" width="40" src={icon_git}/></center>
+                               </a>
                             </div>
                         </div>
                     </div>
