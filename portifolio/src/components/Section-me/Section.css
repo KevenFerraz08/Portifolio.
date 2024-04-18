@@ -35,35 +35,13 @@ section{
     width: 80%;
     background-color: #16181D;
     margin: 8% auto;
-    border-radius: 20px;
-    box-shadow: 1px 1px 10px 1px var(--color-teme);
+    border-radius: 5px;
 }
-.image .foto{
-    width: 90%;
-    height: 100%;
-    margin-top: 10%;
-    margin-left: 0;
+
+.image{
+    overflow: hidden;
 }
-.image .button{
-    width:90%;
-    color:var(--text-comum);
-    border-style:solid;
-    border-color: var(--text-comum);
-    border-radius:20px;
-    background-color:var(--section-color);
-    font-weight: bolder;
-    margin-top: 5%;
-    margin-bottom: 10%;
-    font-size: 1rem;
-    margin-left: 1rem;
-}
-.button:hover{
-    background-color: var(--color-teme);
-    font-size: 1.5rem;
-    padding: 2px;
-    color: var(--text-hover-black);
-    border-color: var(--color-teme);
-}
+
 .container-informations{
     float: right;
     width: 70%;
@@ -116,6 +94,8 @@ section{
 }
 .icon-skills:hover{
     box-shadow: 1px 1px 10px 1px var(--color-teme);
+    transition: 0.5s;
+    margin-top: -7px;
 }
 
 @media (max-width: 1300px) {
@@ -164,46 +144,9 @@ section{
         box-shadow: none;
         display: flex; /* Adiciona display flex */
         align-items: center; /* Alinha verticalmente os elementos */
-        border-style: solid;
-        border-color: var(--color-border);
-        border-radius: 5px;
-        border-width: 1.9px;
+       justify-content: center;
     }
     
-    .image .foto {
-        width: 90%; /* Ajusta a largura da foto para ocupar metade do espaço */
-        height: 100%;
-        margin-top: 0%;
-        padding: 1rem;
-        float: left;
-    }
-    
-    .image .button {
-        width: 40%; /* Ajusta a largura do botão para ocupar metade do espaço */
-        color: var(--text-comum);
-        border-style: solid;
-        border-color: var(--text-comum);
-        border-radius: 2px;
-        background-color: var(--section-color);
-        font-weight: bolder;
-        margin-top: 40%;
-        margin-bottom: 0%;
-        font-size: 1rem;
-        margin-right: 1rem;
-        margin-left: 1rem;
-        justify-content: center;
-    }
-    
-    .button:hover{
-        background-color: var(--color-teme);
-        font-size: 1.5rem;
-        padding: 2px;
-        color: var(--text-hover-black);
-        border-color: var(--color-teme);
-    }
-    .image .text-above-button {
-        display: none;
-    }
     .container-informations{
         float: right;
         width: 100%;

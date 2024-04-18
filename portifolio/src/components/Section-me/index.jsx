@@ -1,5 +1,5 @@
 import style from './Section.css'
-import foto from '../../assets/img/Keven-Ferraz.png'
+import CardAboutMe from '../Card-About-me/index.jsx'
 import icon_git from '../../assets/icons/github.svg'
 import icon_react from '../../assets/icons/react.svg'
 import icon_js from '../../assets/icons/javascript.svg'
@@ -12,12 +12,9 @@ const Section = () => {
          <section className={style.Section}>
             <div className="container-section">
                 <div className="container-image">
-                    
-                    <div className="image">
-                        <center><img src={foto} alt="Foto" className='foto'/></center>
-                        <br/>
-                        <button className="button">About-me&nbsp;&nbsp;&nbsp;&rarr;</button>
-                    </div>
+                   <div className='image'>
+                         <CardAboutMe/>
+                   </div>
                 </div>
                 <div className="container-informations">
                     <div className="information-section">
@@ -45,6 +42,7 @@ const Section = () => {
                             </div>
                             <div className="icon-skills">
                             <center>
+
                                      <img align="center" alt="node js" height="30" width="40" src={icon_node} />
                             </center>
 
