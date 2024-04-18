@@ -34,7 +34,7 @@ const Section = () => {
                                 <center><img align="center" alt="C#" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg"/></center>
                             </div>
                             <div className="icon-skills">
-                               <center> <img align="center" alt="Js" height="30" width="40" src={giticon} /></center>
+                               <center> <img align="center" alt="github" height="30" width="40" src={giticon} /></center>
                             </div>
                             <div className="icon-skills">
                                <center> <img align="center" alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"/></center>
