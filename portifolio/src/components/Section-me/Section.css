@@ -105,7 +105,7 @@ section{
     padding: 0.5rem;
 }
 .icon-skills img{
-    width: 60%;
+    width: 100%;
 }
 .icon-skills:hover{
     box-shadow: 1px 1px 10px 1px var(--color-teme);
