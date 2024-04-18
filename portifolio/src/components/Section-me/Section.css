@@ -3,10 +3,10 @@
     --text-comum:#D3D4D7;
     --color-teme:#019BC3;
     --section-color:#16181D;
+    --text-hover-black:black;
 }
 section{
     width:100%;
-    background-color:red;
 }
 .container-section{
     display: flex;
@@ -20,7 +20,6 @@ section{
     float: left;
     width: 30%;
     height: 100%;
-    background-color: #D3D4D7;
 
 }
 .container-image .image{
@@ -29,14 +28,16 @@ section{
     margin: 8% auto;
     border-radius: 20px;
     padding:10px;
+    box-shadow: 1px 1px 10px 1px var(--color-teme);
 }
 .image .foto{
     width: 90%;
     height: 100%;
     margin-top: 10%;
+    margin-left: rem;
 }
 .image .button{
-    width:50%;
+    width:100%;
     color:var(--text-comum);
     border-style:solid;
     border-color: var(--text-comum);
@@ -45,60 +46,123 @@ section{
     font-weight: bolder;
     margin-top: 10%;
     margin-bottom: 5%;
-    margin-left: 20px;
-    font-size: 18px;
+    font-size: 1rem;
+}
+.button:hover{
+    background-color: var(--color-teme);
+    font-size: 1.5rem;
+    padding: 2px;
+    color: var(--text-hover-black);
+    border-color: var(--color-teme);
+}
+.image .text-above-button {
+    display: none;
 }
 .container-informations{
     float: right;
     width: 70%;
     height: 100%;
-    background-color: chartreuse;
-}
-/*
-section{
-    width: 100%;
-    padding: 10px;
-}
-.container-section{
-    width: 100%;
-    background-color: var(--section-color);
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: center;
 }
-.image{
-    float: left;
-    width: 50%;
-    height: 100%;
-    padding: 10px;
-    overflow: hidden;
+.container-informations .information-section{
+    width: 80%;
+    height:100%;
     
 }
-.foto{
-    width: 50%;
-    height: 50%;
-    box-shadow: 0px 0px 15px 1px var(--text-comum);
-}
-.information-section{
-    float: right;
-    width: 40%;
-    height: 100%;
-    padding: 20px;
-    background-color: red;
-}
 .information-section h2{
+    margin-bottom: 2rem;
     color: var(--color-teme);
-    margin-top: 10px;
-    margin-bottom: 1rem;
 }
 .information-section h1{
-    color: var(--text-comum);
     margin-bottom: 1rem;
 }
 .information-section h3{
-    text-align: center;
+    margin-left: 2rem;
     color: var(--text-comum);
     margin-bottom: 1rem;
+    font-weight: 500;
+}
+.information-section p{
+    text-align: justify;
+    font-weight: 500;
+    font-size: medium;
+    margin-bottom: 6rem;
 }
 
-*/
+.information-section .skills-icons{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    gap: 10px;
+}
+.skills-icons .icon-skills{
+    width: 9%;
+    height: 100%;
+    border-style: solid;
+    border-color: var(--color-teme);
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+.icon-skills img{
+    width: 60%;
+}
+.icon-skills:hover{
+    box-shadow: 1px 1px 10px 1px var(--color-teme);
+}
+
+@media (max-width: 900px) {
+    .container-section {
+        flex-direction: column-reverse; /* Altera a direção dos itens para coluna e inverte a ordem */
+    }
+
+    .container-image {
+        order: 2; /* Define a ordem do elemento para ser o segundo */
+        width: 100%; /* Ajusta a largura para ocupar toda a largura da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    .container-image .image {
+        width: 80%; /* Ocupa toda a largura do container-image */
+        background-color: #16181D;
+        border-radius: 0px;
+        padding: 0px;
+        box-shadow: 0px 0px 0px 0px var(--color-teme);
+    }
+
+    .image .foto {
+        width: 50%; /* Ajusta a largura da foto */
+        float: left; /* Alinha a foto à esquerda */
+        margin-top: 4%;
+        margin-right: 0;
+    }
+
+    .image .button {
+        width: 28%; /* Ajusta a largura do botão */
+        float: right; /* Alinha o botão à direita */
+        margin-bottom: 2%; /* Adiciona margem inferior */
+        font-size: 1rem;
+        margin-top: -6%;
+        margin-right: 9rem;
+    }
+
+    .container-informations {
+        order: 1; /* Define a ordem do elemento para ser o primeiro */
+        width: 100%; /* Ajusta a largura para ocupar toda a largura da tela */
+        height: auto; /* Ajusta a altura automaticamente */
+    }
+
+    /* Adicione o estilo para o texto acima do botão */
+    .image .text-above-button {
+        float: right;
+        text-align:left; /* Centraliza o texto */
+        color: var(--text-comum); /* Cor do texto */
+        margin-top: 10px; /* Margem superior */
+        font-size: 1rem; /* Tamanho da fonte */
+        font-weight: 500;
+        margin-bottom: 3rem;
+        display: block;
+        width: 50%;
+        height: 100%;
+    }
+}
