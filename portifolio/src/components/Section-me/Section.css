@@ -58,7 +58,7 @@ section{
    
 }
 .information-section h2{
-    margin-top: 3rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     color: var(--color-teme);
 }
@@ -71,11 +71,14 @@ section{
     margin-bottom: 2rem;
     font-weight: 500;
 }
+.skilsh1{
+    margin-bottom: -1rem;
+}
 .information-section p{
     text-align: justify;
     font-weight: 500;
     font-size: medium;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .information-section .skills-icons{
@@ -83,6 +86,7 @@ section{
     justify-content: space-around;
     padding: 1rem;
     gap: 10px;
+    margin-top: -1rem;
 }
 .skills-icons .icon-skills{
     width: 9%;

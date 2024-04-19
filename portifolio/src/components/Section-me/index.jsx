@@ -27,6 +27,7 @@ const Section = () => {
                         <p>Meu nome é Keven Ferraz de Almeida, sou dev frontend. Atualmente sou freelancer como Frontend Developer e UI Designer. Desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO.
                         <br/>
                         Meu nome é Keven Ferraz de Almeida, sou dev frontend. Atualmente sou freelancer como Frontend Developer e UI Designer. Desenvolvo interfaces modernas e de alta qualidade, concentrado em performance, animações, responsividade e SEO.</p>
+                       <center><h1 className='skilsh1'>Skills</h1></center>
                         <div className="skills-icons">
                             <div className="icon-skills">
                                <center> <img align="center" alt="html" height="30" width="40" src={icon_html}/></center>
