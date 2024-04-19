@@ -183,6 +183,7 @@ section{
         flex-wrap: wrap;
         padding: 1rem;
         gap: 10px;
+        margin-bottom: 4rem;
     }
     .skills-icons .icon-skills{
         width: 10%;
