@@ -1,49 +1,64 @@
-:root{
-    --bacground:#282c34;
-    --text-comum:#D3D4D7;
-    --color-teme:#019BC3;
-    --section-color:#16181D;
-    }
-    *{
-        text-decoration: none;
-        color: var(--text-comum);
-    }
-    header {
-        background-color: var(--bacground);
-        padding: 1rem; /* Adicionando um pouco de espaço interno para melhorar a aparência */
-        position: sticky;/*para que ele fique no topo*/
-        top: 0;
-        z-index: 99;/*para que ele fique acipa dos outros itens*/
-        box-shadow: 0px 0px 15px 1px var(--section-color);
-    }
-    nav{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-    }
-    
+:root {
+    --background: #282c34;
+    --text-common: #D3D4D7;
+    --color-theme: #019BC3;
+    --section-color: #16181D;
+}
+
+* {
+    text-decoration: none;
+    color: var(--text-common);
+}
+
+header {
+    background-color: var(--background);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 0px 15px 1px var(--section-color);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    margin-right: 1.5rem;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+li span {
+    color: var(--text-common);
+    font-weight: bolder;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+li span:hover {
+    color: var(--color-theme);
+}
+
+.menu-button {
+    display: none;
+}
+
+@media (max-width: 800px) {
     img {
-        width: 50px;
-        height: 50%;
-        margin-bottom: 0;
+       display: block;
     }
     
     ul {
-        float: right; 
-        display: flex;
-        list-style-type: none;
-        align-items: center;
-        margin-right: 1.5rem;
+        display:none;
     }
-    
-    li span {
-        color: var(--text-comum);
-        font-weight: bolder;
-        margin-right: 1.5rem;
-        cursor: pointer;
-    }
-    
-    li span:hover {
-        color: var(--color-teme);
-    }
+}

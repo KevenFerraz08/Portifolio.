@@ -28,7 +28,7 @@ section{
 }
 .container-image{
     float: left;
-    width: 30%;
+    width: 40%;
     height: 100%;
 }
 .container-image .image{
@@ -44,7 +44,7 @@ section{
 
 .container-informations{
     float: right;
-    width: 70%;
+    width: 60%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -54,7 +54,7 @@ section{
     height:100%;
 }
 .information-section h2{
-    margin-top:1rem;
+    margin-top:2rem;
     margin-bottom: 1rem;
     color: var(--color-teme);
 }
@@ -71,7 +71,7 @@ section{
     text-align: justify;
     font-weight: 500;
     font-size: medium;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .information-section .skills-icons{
@@ -98,7 +98,7 @@ section{
     margin-top: -7px;
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 900px) {
     .container-section {
         flex-direction: column-reverse; /* Altera a direção dos itens para coluna e inverte a ordem */
     }
