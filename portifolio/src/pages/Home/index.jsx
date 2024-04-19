@@ -1,7 +1,8 @@
+import { Helmet } from "react-helmet";
 import Header from '../../components/Header/index'
 import Footer from '../../components/Footer';
 import Section from '../../components/Section-me';
-import { Helmet } from "react-helmet";
+import SectionProject from '../../components/Section-Projects'
 const Home = () => {
     return(
         <>
@@ -10,6 +11,7 @@ const Home = () => {
             </Helmet>
             <Header />
             <Section />
+            <SectionProject />
             <Footer />
         </>
     )

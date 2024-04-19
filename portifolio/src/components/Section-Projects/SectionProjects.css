@@ -1,0 +1,14 @@
+:root{
+    --bacground:#282c34;
+    --text-comum:#D3D4D7;
+    --color-teme:#019BC3;
+    --section-color:#16181D;
+    --text-hover-black:black;
+    --color-border:#282c34;
+}
+
+section{
+    background-color: red;
+    width: 100%;
+    height: 200px;
+}
