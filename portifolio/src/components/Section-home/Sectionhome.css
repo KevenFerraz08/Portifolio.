@@ -1,0 +1,104 @@
+:root{
+    --bacground:#282c34;
+    --text-comum:#D3D4D7;
+    --color-teme:#019BC3;
+    --section-color:#16181D;
+    --text-hover-black:black;
+    --color-border:#282c34;
+}
+
+#Section-Home{
+    width: 100%;
+    height: 490px;
+    display: flex;
+    justify-content: center;
+}
+.sectionhome-container {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    /* Ajusta a imagem para cobrir todo o container */
+}
+
+.container-text{
+    margin: auto;
+    float: left;
+    width: 50%;
+    height: 90%;
+}
+.container-text h1{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    color: var(--color-teme);
+    margin-left: 2rem;
+}
+.container-text p{
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    letter-spacing: 2px;
+    margin-left: 2rem;
+    width: 90%;
+    height: 50%;
+}
+.imagem-container {
+    position: relative; /* Define o posicionamento relativo para o container */
+    width: 100%; /* Ajuste conforme necessário */
+    height: 100%; /* Ajuste conforme necessário */
+}
+
+.img1, .img2 {
+    position: absolute; /* Define o posicionamento absoluto para ambas as imagens */
+    top: 0; /* Ajuste conforme necessário */
+    left: 0; /* Ajuste conforme necessário */
+    width: 100%; /* Ajuste conforme necessário */
+    height: 100%; /* Ajuste conforme necessário */
+}
+
+.img2 {
+    z-index: 1; /* Define a imagem 2 para estar sobreposta à imagem 1 */
+    margin-left: 6rem;
+}
+@media (max-width: 900px){
+    .sectionhome-container {
+        flex-direction: column-reverse; /* Altera a direção dos itens para coluna e inverte a ordem */
+    }
+    .container-text{
+        order: 1;
+        margin: auto;
+        float: left;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 4rem;
+        overflow: hidden;
+    }
+    .container-text h1{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        color: var(--color-teme);
+        margin-left: 2rem;
+    }
+    .container-text p{
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: 1rem;
+        letter-spacing: 1px;
+        margin-left: 2rem;
+        width: 90%;
+        height: 100%;
+    }
+    .imagem-container {
+        order: 2;
+        display: flex;
+        justify-content: center;
+        width: 100%; /* Ajuste conforme necessário */
+        height: 100%; /* Ajuste conforme necessário */
+    }
+    .img1 {
+        display: none;
+    }
+    .img2 {
+        margin-left: 0;
+    }
+}
